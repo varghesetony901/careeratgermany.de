@@ -1,10 +1,9 @@
 "use client";
+import { Locale } from "@/i18n.config";
 import { MenuSquare, XCircle } from "lucide-react";
 import { RevealList, RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
-import LocaleSwitcher from "./LocaleSwitcher";
-import { Locale } from "@/i18n.config";
+import { useEffect, useRef, useState } from "react";
 
 const MobileNav = ({ locale }: { locale: Locale }) => {
   const [isOpen, setIsOpen] = useState(false);

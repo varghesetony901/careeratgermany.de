@@ -16,15 +16,6 @@ const nextConfig = {
             protocol: "https",
             hostname: "career-at-germany-de.s3.ap-south-1.amazonaws.com",
           },
-          {
-            protocol: "https",
-            hostname: "images.unsplash.com",
-          },
-          {
-            protocol: "https",
-            hostname: "plus.unsplash.com",
-          },
-
         ],
       },
 }
