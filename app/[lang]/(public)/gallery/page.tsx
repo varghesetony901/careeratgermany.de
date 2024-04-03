@@ -7,13 +7,14 @@ import Photos from "@/components/gallery/Photos";
 import Tags from "@/components/gallery/Tags";
 import Videos from "@/components/gallery/Videos";
 import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
+import { Locale } from "@/i18n.config";
 
 const Page = async ({
   searchParams,
   params,
 }: {
   searchParams: { pageNumber: string; tag?: string; type: string };
-  params: { lang: string };
+  params: { lang: Locale };
 }) => {
   const locale = params.lang;
   const pageNumber = searchParams.pageNumber || "1";
