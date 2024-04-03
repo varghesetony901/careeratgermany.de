@@ -5,7 +5,14 @@ export const Icons = {
     <img
       src="/logo.jpg"
       alt="Logo"
-      className="w-52 sm:w-56"
+      className="w-56"
+    />
+  ),
+  smallLogo: (props: LucideProps) => (
+    <img
+      src="/logoSmall.jpg"
+      alt="LogoSmall"
+      className="w-10 "
     />
   ),
 };
