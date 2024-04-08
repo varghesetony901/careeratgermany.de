@@ -28,16 +28,16 @@ const Page = () => {
         <div className=" pb-6 text-center flex flex-col gap-2">
           <p className="font-semibold">
             
-            {locale === "en" ? "You can start applying for your requirement. For more information about the exact procedure, send in the following form, with absolutely no obligation." : "Sie können sich für Ihren Bedarf bewerben. Für weitere Informationen über das genaue Verfahren können Sie das folgende Formular völlig unverbindlich ausfüllen."}
+            {locale === "en" ? "You can start applying for your requirement. For more information about the exact procedure, send in the following form, with absolutely no obligation." : "Sie können mit der Beantragung Ihrer Anforderung beginnen. Für weitere Informationen über den genauen Ablauf senden Sie bitte das folgende Formular unverbindlich ab."}
           </p>
           <p className="text-red-500">
             
-            {locale === "en" ? "* Please be aware that, you can only send one request at a time. So try to include accurate details in the form not to miss your chance reaching us. Once we resolve your request, you can try again. Incase you find something difficult during the process, you can mail us through the contact page." : "* Bitte beachten Sie, dass Sie jeweils nur eine Anfrage senden können. Versuchen Sie also, genaue Angaben in das Formular einzutragen, um Ihre Chance, uns zu erreichen, nicht zu verpassen. Sobald wir Ihre Anfrage gelöst haben, können Sie es erneut versuchen. Sollten Sie während des Prozesses auf Schwierigkeiten stoßen, können Sie uns über die Kontaktseite eine E-Mail schicken."}
+            {locale === "en" ? "* Please be aware that, you can only send one request at a time. So try to include accurate details in the form not to miss your chance reaching us. Once we resolve your request, you can try again. Incase you find something difficult during the process, you can mail us through the contact page." : "* Bitte beachten Sie, dass Sie jeweils nur eine Anfrage senden können. Versuchen Sie also, genaue Angaben in das Formular zu geben, um Ihre Chance, uns zu erreichen, nicht zu verpassen. Sobald wir Ihre Anfrage gelöst haben, können Sie es erneut versuchen. Falls Sie während des Prozesses Schwierigkeiten haben, können Sie uns über die Kontaktseite eine E-Mail senden."}
             
           </p>
           <p className="pt-2">
             
-            {locale === "en" ? "One of our employees will contact you within 72 hours." : "Einer unserer Mitarbeiter wird Sie innerhalb von 72 Stunden kontaktieren."}
+            {locale === "en" ? "One of our employees will contact you within 72 hours." : "Einer unserer Mitarbeiter wird sich innerhalb von 72 Stunden mit Ihnen in Verbindung setzen."}
           </p>
           <p className="pt-2 font-semibold ">
           {locale === "en" ? "You are also welcome to contact us directly on" : "Sie können uns auch gerne direkt kontaktieren unter"}
@@ -48,7 +48,7 @@ const Page = () => {
         <div className="w-full mb-6">
           <p className="text-center mb-4">
           
-          {locale === "en" ? "Please choose a category to proceed further." : "Bitte wählen Sie eine Kategorie, um fortzufahren."}
+          {locale === "en" ? "Please choose a category to proceed further." : "Bitte wählen Sie eine Kategorie aus, um fortzufahren."}
           </p>
           <Select
             onValueChange={(e) => {
@@ -56,12 +56,12 @@ const Page = () => {
             }}
           >
             <SelectTrigger className="sm:w-80 rounded-xl m-auto border border-red-400 focus:border-none focus:outline-none focus:ring-1 focus:ring-red-600">
-              <SelectValue placeholder={locale === "en" ? "Select category *" : "Kategorie auswählen *"} />
+              <SelectValue placeholder={locale === "en" ? "Select category *" : "* Kategorie auswählen"} />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="trainee">{locale === "en" ? "Trainees" : "Auszubildende"}</SelectItem>
-                <SelectItem value="company">{locale === "en" ? "Companies" : "Unternehmen"}</SelectItem>
+                <SelectItem value="trainee">{locale === "en" ? "Trainee" : "Azubi"}</SelectItem>
+                <SelectItem value="company">{locale === "en" ? "Company" : "Firma"}</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>

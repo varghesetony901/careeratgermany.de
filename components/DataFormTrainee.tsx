@@ -109,7 +109,7 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Apprenticeships"
-                      : "Lehrlingsausbildung"}
+                      : "Lehrstellen"}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -146,7 +146,7 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Telephone with direct dialing (voluntary information)"
-                      : "Telefon mit Direktwahl (freiwillige Information)"}
+                      : "Telefon mit Direktwahl (freiwillige Angaben)"}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -173,7 +173,7 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Which intake are you looking for?"
-                      : "Nach welchem Einlass suchen Sie?"}
+                      : "Welche Einnahme suchst du?"}
                   </FormLabel>
                   <Select onValueChange={field.onChange}>
                     <FormControl>
@@ -183,7 +183,7 @@ const DataFormTrainee = () => {
                           placeholder={
                             locale === "en"
                               ? "Select intake here"
-                              : "Hier Einlass auswählen"
+                              : "Wählen Sie hier die Einnahme aus"
                           }
                         />
                       </SelectTrigger>
@@ -212,7 +212,7 @@ const DataFormTrainee = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                    {locale === "en" ? "Notes" : "Anmerkungen"}
+                    {locale === "en" ? "Notes" : "Notizen"}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -238,7 +238,7 @@ const DataFormTrainee = () => {
             >
               {locale === "en"
                 ? "C @ G Recruiting is committed to protecting and respecting your  privacy. We will contact you, store and use your data only for the purpose of this request. If you agree, agree!"
-                : "C @ G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden Sie kontaktieren, Ihre Daten speichern und nur für den Zweck dieser Anfrage verwenden. Wenn Sie einverstanden sind, stimmen Sie zu!"}
+                : "C@G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden uns mit Ihnen in Verbindung setzen, Ihre Daten nur zum Zweck dieser Anfrage speichern und verwenden. Wenn Sie einverstanden sind, stimmen Sie zu!"}
             </Link>
             <div className="flex items-center gap-4">
               <Checkbox onCheckedChange={() => setIsChecked(!isChecked)} />
@@ -246,7 +246,7 @@ const DataFormTrainee = () => {
               <p>
                 {locale === "en"
                   ? "I agree to be contacted by C@G Recruiting"
-                  : "Ich bin damit einverstanden, von C@G Recruiting kontaktiert zu werden."}
+                  : "Ich bin damit einverstanden, von C@G Recruiting kontaktiert zu werden"}
 
                 <span className="text-red-500"> *</span>
               </p>
@@ -258,17 +258,17 @@ const DataFormTrainee = () => {
             >
               {locale === "en"
                 ? "You can object to this consent at any time. Further information about our data protection procedures can be found here."
-                : "Sie können dieser Einwilligung jederzeit widersprechen. Weitere Informationen über unsere Datenschutzverfahren finden Sie hier."}
+                : "Sie können dieser Einwilligung jederzeit widersprechen. Weitere Informationen zu unseren Datenschutzverfahren finden Sie hier."}
             </Link>
 
             <Button type="submit" disabled={!isChecked || isUploading}>
-              {locale === "en" ? "Submit" : "Einreichen"}
+              {locale === "en" ? "Submit" : "Senden"}
             </Button>
 
             <p>
               {locale === "en"
                 ? "Best regards, C@G Recruiting team"
-                : "Mit freundlichen Grüßen, C@G Recruiting Team"}
+                : "Mit freundlichen Grüßen, C@G Recruiting-Team"}
             </p>
 
             <FormSuccess message={success} />

@@ -6,13 +6,13 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-  } from "@/components/ui/form";
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { FormSuccess } from "./form-success";
 import { FormError } from "./form-error";
 import { Button } from "./ui/button";
@@ -23,7 +23,7 @@ import { useParams } from "next/navigation";
 
 const EnquiryForm = () => {
   const params = useParams();
-  const locale = params?.lang; 
+  const locale = params?.lang;
   const [isUploading, setIsUploading] = useState(false);
   const [success, setSuccess] = useState<string | undefined>("");
   const [error, setError] = useState<string | undefined>("");
@@ -38,9 +38,8 @@ const EnquiryForm = () => {
     },
   });
 
-
   async function handleForm(data: TEnquiryFormSchema) {
-    setIsUploading(true)
+    setIsUploading(true);
 
     const resp = await enquiry(data);
     if (resp.message && locale === "en") {
@@ -53,15 +52,15 @@ const EnquiryForm = () => {
       setError("Sie haben Anfragen, die noch zu klären sind!");
     }
 
-    setIsUploading(false)
-    form.reset()
+    setIsUploading(false);
+    form.reset();
   }
 
   return (
     <div className="">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleForm)}>
-          <div className=" flex flex-col gap-4  m-auto">
+          <div className=" flex flex-col gap-4 m-auto px-1">
             {/*  Name */}
             <FormField
               control={form.control}
@@ -69,8 +68,8 @@ const EnquiryForm = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? "Full Name" : "Vollständiger Name"}
-                    </FormLabel>
+                    {locale === "en" ? "Full Name" : "Vollständiger Name"}
+                  </FormLabel>
                   <FormControl>
                     <Input placeholder="John Doe" {...field} />
                   </FormControl>
@@ -85,9 +84,7 @@ const EnquiryForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                  {locale === "en" ? "Email" : "E-mail"}
-                    </FormLabel>
+                  <FormLabel>{locale === "en" ? "Email" : "E-mail"}</FormLabel>
                   <FormControl>
                     <Input placeholder="hello@123.com" {...field} />
                   </FormControl>
@@ -103,13 +100,17 @@ const EnquiryForm = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? "Telephone" : "Telefon"}
-                    
+                    {locale === "en" ? "Telephone" : "Telefon"}
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder= 
-                    {locale === "en" ? "contact number here" : "Kontaktnummer hier"}
-                    {...field} />
+                    <Input
+                      placeholder={
+                        locale === "en"
+                          ? "contact number here"
+                          : "Kontaktnummer hier"
+                      }
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -124,12 +125,15 @@ const EnquiryForm = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? "Message" : "Nachricht"}
-                    </FormLabel>
+                    {locale === "en" ? "Message" : "Nachricht"}
+                  </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder=
-                      {locale === "en" ? "Feel free to write your comments, doubts, suggestions etc." : "Sie können uns gerne Ihre Kommentare, Zweifel, Vorschläge usw. mitteilen."}
+                      placeholder={
+                        locale === "en"
+                          ? "Feel free to write your comments, doubts, suggestions etc."
+                          : "Sie können uns gerne Ihre Kommentare, Zweifel, Vorschläge usw. mitteilen."
+                      }
                       {...field}
                     />
                   </FormControl>
@@ -139,8 +143,7 @@ const EnquiryForm = () => {
             />
 
             <Button type="submit" disabled={isUploading}>
-              
-              {locale === "en" ? "Submit" : "Einreichen"}
+              {locale === "en" ? "Submit" : "Senden"}
             </Button>
             <FormSuccess message={success} />
             <FormError message={error} />

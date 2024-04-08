@@ -32,7 +32,7 @@ const Page = async ({
   return (
     <Wrapper>
       <MaxWidthWrapper className="py-12 ">
-        <h1 className="font-bold pb-2 text-center text-3xl">Gallery</h1>
+        <h1 className="font-bold pb-2 text-center text-3xl">{locale === "en" ? "Gallery" : "Galerie"}</h1>
         <div>
           <PhotoVideoSwitch />
           {type === "photo" &&
@@ -49,7 +49,7 @@ const Page = async ({
                 <PaginationFC count={count} />
               </div>
             ))}
-          {type === "video" && <Videos />}
+          {type === "video" && <Videos locale = {locale}/>}
         </div>
       </MaxWidthWrapper>
     </Wrapper>

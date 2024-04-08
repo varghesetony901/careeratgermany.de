@@ -1,9 +1,12 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 
 const PhotoVideoSwitch = () => {
+  const paramsList = useParams()
+  const locale = paramsList.lang;
+  
   const [color, setColor] = useState("active");
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -39,7 +42,8 @@ const PhotoVideoSwitch = () => {
             }
           )}
         >
-          Photos
+          {locale === "en" ? "Photos" : "Fotos"}
+          
         </p>
         <p
           onClick={toogleContentPhoto}

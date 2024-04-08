@@ -20,9 +20,9 @@ const NavBarItems = ({ locale }: { locale: Locale }) => {
     { name: "gallery", link: `/${locale}/gallery` },
   ];
   const MenuItemsDe = [
-    { name: "home", link: `/${locale}` },
+    { name: "heim", link: `/${locale}` },
     { name: "Dienste", link: `/${locale}/services` },
-    { name: "blog", link: `/${locale}/blogs` },
+    { name: "Blog", link: `/${locale}/blogs` },
     { name: "Kontakt", link: `/${locale}/contact` },
     { name: "Galerie", link: `/${locale}/gallery` },
   ];
@@ -56,7 +56,7 @@ const NavBarItems = ({ locale }: { locale: Locale }) => {
                 key={menu.name}
                 className={cn(
                   "px-5 font-semibold hover:text-red-600 capitalize",
-                  { "text-red-700": pathname.includes(menu.name) }
+                  { "text-red-700": pathname.includes(menu.name) || pathname === menu.link }
                 )}
               >
                 {menu.name}
@@ -69,7 +69,7 @@ const NavBarItems = ({ locale }: { locale: Locale }) => {
                 key={menu.name}
                 className={cn(
                   "px-5 font-semibold hover:text-red-600 capitalize",
-                  { "text-red-700": pathname.includes(menu.name) }
+                  { "text-red-700": pathname.includes(menu.name) || pathname === menu.link}
                 )}
               >
                 {menu.name}

@@ -2,23 +2,23 @@ import EnquiryForm from "@/components/EnquiryForm";
 import Wrapper from "@/components/animation-wrapper/Wrapper";
 import Link from "next/link";
 
+import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
+import { AiFillInstagram } from "react-icons/ai";
 import {
   FaFacebookF,
-  FaInstagram,
+  FaFileDownload,
   FaLinkedinIn,
   FaPhoneAlt,
   FaYoutube,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
-import { FaFileDownload } from "react-icons/fa";
-import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
-import { getDictionary } from "@/lib/dictionary";
-import { Locale } from "@/i18n.config";
 
-const page = async({params} : {params : {lang : Locale}}) => {
+const page = async ({ params }: { params: { lang: Locale } }) => {
   const locale = params.lang;
-  const {page} = await getDictionary(locale)
+  const { page } = await getDictionary(locale);
   return (
     <Wrapper>
       <MaxWidthWrapper>
@@ -40,37 +40,40 @@ const page = async({params} : {params : {lang : Locale}}) => {
                     download
                     className="mx-2 inline-block hover:underline md:text-lg text-blue-800"
                   >
-                   {page.contact.downloadLink}
+                    {page.contact.downloadLink}
                   </a>
                 </div>
                 <p className="flex items-center gap-2">
                   <FaLocationDot size={24} />
 
-                  <span className="mx-2 w-72 ">
-                    Blumenstraße 8, <br /> 88444, Ummendorf, <br /> Germany
-                  </span>
+                  {locale === "en" ? (
+                    <span className="mx-2 w-72 ">
+                      Blumenstraße 8, <br /> 88444, Ummendorf, <br /> Germany
+                    </span>
+                  ) : (
+                    <span className="mx-2 w-72 ">
+                      Blumenstraße 8, <br /> 88444, Ummendorf, <br /> Deutschland
+                    </span>
+                  )}
                 </p>
                 <div className="flex items-center gap-2">
-                <FaPhoneAlt size={20} />
+                  <FaPhoneAlt size={20} />
                   <Link
                     href={"tel:9567465260"}
                     className="flex gap-2  items-center
                   hover:text-red-700 transition-colors duration-300"
                   >
-
                     <p className="mx-2 truncate  dark:text-gray-400">
                       +49 15 14 20 53 907
                     </p>
                   </Link>
                 </div>
                 <div className="flex items-center gap-2">
-                <IoMdMail size={22} />
+                  <IoMdMail size={22} />
                   <Link
                     href={"mailto:careeratgermanyrecruiting@gmail.com"}
                     className="inline-block gap-2  items-center hover:text-red-700 transition-colors duration-300"
                   >
-                    
-
                     <span className="mx-2  truncate   dark:text-gray-400">
                       careeratgermanyrecruiting@gmail.com
                     </span>
@@ -80,7 +83,9 @@ const page = async({params} : {params : {lang : Locale}}) => {
 
               {/* social icons */}
               <div className="mt-6 md:mt-8 ">
-                <p className="text-lg font-bold underline">{page.contact.follow}</p>
+                <p className="text-lg font-bold underline">
+                  {page.contact.follow}
+                </p>
 
                 <div className="flex gap-4 items-center mt-4 -mx-1.5">
                   <Link
@@ -104,7 +109,7 @@ const page = async({params} : {params : {lang : Locale}}) => {
                     href="https://www.instagram.com/careeratgermany/"
                     target="_blank"
                   >
-                    <FaInstagram size={24} />
+                    <AiFillInstagram size={26} />
                   </Link>
 
                   <Link
@@ -122,9 +127,9 @@ const page = async({params} : {params : {lang : Locale}}) => {
             <div className="mt-16 border-t w-[80%] border-yellow-300 lg:border-none  m-auto  lg:w-[1px] lg:h-96 bg-yellow-300 mx-auto"></div>
 
             {/* right section */}
-            <div className="px-4 mt-6 lg:w-1/2 lg:px-6">
+            <div className="px-3 mt-6 lg:w-1/2 lg:px-6">
               <div className="w-full lg:px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
-                <h1 className="text-lg font-medium ">
+                <h1 className="text-lg font-medium px-1">
                   {page.contact.formQuery}
                 </h1>
 

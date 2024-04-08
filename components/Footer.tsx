@@ -1,14 +1,10 @@
 "use client";
+import { Locale } from "@/i18n.config";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import ToTopButton from "./ToTopButton";
-import { Locale } from "@/i18n.config";
 
 const Footer = ({ locale }: { locale: Locale }) => {
   const pathname = usePathname();
@@ -33,24 +29,24 @@ const Footer = ({ locale }: { locale: Locale }) => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href={`/${locale}`} className=" hover:underline">
+                    <Link href={`/${locale}`} className=" hover:underline">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a href={`/${locale}/services`} className="hover:underline">
-                        {locale === "en" ? "Services" : "Dienste "}
-                    </a>
+                    <Link href={`/${locale}/services`} className="hover:underline">
+                      {locale === "en" ? "Services" : "Dienste "}
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a href={`/${locale}/blogs`} className="hover:underline">
+                    <Link href={`/${locale}/blogs`} className="hover:underline">
                       Blogs
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a href={`/${locale}/contact`} className="hover:underline">
-                        {locale === "en" ? "Contact" : "Kontakt "}
-                    </a>
+                    <Link href={`/${locale}/contact`} className="hover:underline">
+                      {locale === "en" ? "Contact" : "Kontakt "}
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -99,7 +95,7 @@ const Footer = ({ locale }: { locale: Locale }) => {
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  {locale === "en" ? "Legal" : "Rechtliches "}
+                  {locale === "en" ? "Legal" : "Rechtlich "}
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
@@ -109,7 +105,6 @@ const Footer = ({ locale }: { locale: Locale }) => {
                       className="hover:underline"
                     >
                       {locale === "en" ? "Data protection" : "Datenschutz "}
-                       
                     </Link>
                   </li>
                 </ul>
@@ -139,7 +134,7 @@ const Footer = ({ locale }: { locale: Locale }) => {
                   href="https://www.instagram.com/careeratgermany/"
                   target="_blank"
                 >
-                  <FaInstagram size={20} />
+                  <AiFillInstagram size={22} />
                 </Link>
 
                 <Link
@@ -151,7 +146,10 @@ const Footer = ({ locale }: { locale: Locale }) => {
                 </Link>
               </div>
               <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-                © 2024 C@G Recruting UG.  {locale === "en" ? "All Rights Reserved." : "Alle Rechte vorbehalten. "}      
+                © 2024 C@G Recruting UG.{" "}
+                {locale === "en"
+                  ? "All Rights Reserved."
+                  : "Alle Rechte vorbehalten. "}
               </span>
             </div>
 

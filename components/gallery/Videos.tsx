@@ -6,8 +6,9 @@ import React, { useEffect, useState } from "react";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { IoPlayCircleSharp } from "react-icons/io5";
 import { Skeleton } from "../ui/skeleton";
+import { Locale } from "@/i18n.config";
 
-const Videos = () => {
+const Videos = ({locale} : {locale : Locale}) => {
   const [videos, setVideos] = useState<any>();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -66,7 +67,7 @@ const Videos = () => {
             className="flex items-center gap-2"
           >
             <p className="underline text-gray-800 hover:text-blue-700">
-              Watch more videos on our youtube channel
+              {locale === "de" ? "Mehr Videos" : "More Videos"}
             </p>
             <FaCircleArrowRight size={18} />
           </Link>

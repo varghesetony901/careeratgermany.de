@@ -7,7 +7,7 @@ import { getDictionary } from "@/lib/dictionary";
 const Services = async ({ locale }: { locale: Locale }) => {
   const { page } = await getDictionary(locale);
   return (
-    <MaxWidthWrapper className="px-4 pb-16 ">
+    <MaxWidthWrapper className="px-4 py-12 ">
       <h1 className="font-bold pb-10 text-center  text-3xl">
         {page.home.services.title}
       </h1>
