@@ -133,7 +133,7 @@ const Page = () => {
             {/* Content */}
             <div>
               {/* description */}
-              <p className="text-lg text-muted-foreground font-light pt-10">
+              <p className="text-lg text-muted-foreground font-light pt-10 text-justify">
                 {postById.descriptionEn}
               </p>
 
@@ -141,25 +141,25 @@ const Page = () => {
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleEn1}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphEn1}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleEn2}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphEn2}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleEn3}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphEn3}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleEn4}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphEn4}
               </p>
             </div>
@@ -203,7 +203,7 @@ const Page = () => {
             {/* Content */}
             <div>
               {/* description */}
-              <p className="text-lg text-muted-foreground font-light pt-10">
+              <p className="text-lg text-muted-foreground font-light pt-10 text-justify">
                 {postById.descriptionDe}
               </p>
 
@@ -211,25 +211,25 @@ const Page = () => {
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleDe1}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphDe1}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleDe2}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphDe2}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleDe3}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphDe3}
               </p>
               <p className="text-lg font-semibold pt-4">
                 {postById.subTitleDe4}
               </p>
-              <p className="text-lg text-muted-foreground font-light">
+              <p className="text-lg text-muted-foreground font-light text-justify">
                 {postById.paragraphDe4}
               </p>
             </div>

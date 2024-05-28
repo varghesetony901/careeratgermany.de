@@ -25,17 +25,17 @@ const Footer = ({ locale }: { locale: Locale }) => {
             <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  {locale === "en" ? "Company" : "Firma"}
+                  {locale === "en" ? "Company" : "UNTERNEHMEN"}
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <Link href={`/${locale}`} className=" hover:underline">
-                      Home
+                    {locale === "en" ? "Home" : "Startseite"}
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link href={`/${locale}/services`} className="hover:underline">
-                      {locale === "en" ? "Services" : "Dienste "}
+                      {locale === "en" ? "Services" : "Dienstleistungen"}
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -95,7 +95,7 @@ const Footer = ({ locale }: { locale: Locale }) => {
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  {locale === "en" ? "Legal" : "Rechtlich "}
+                  {locale === "en" ? "Legal" : "RECHTLICHES"}
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">

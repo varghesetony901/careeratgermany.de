@@ -143,7 +143,7 @@ const EnquiryForm = () => {
             />
 
             <Button type="submit" disabled={isUploading}>
-              {locale === "en" ? "Submit" : "Senden"}
+              {locale === "en" ? "Submit" : "Absenden"}
             </Button>
             <FormSuccess message={success} />
             <FormError message={error} />

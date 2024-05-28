@@ -102,7 +102,7 @@ const BlogCard = ({
             href={`blogs/${id}`}
             className="absolute bottom-3.5 font-medium text-center  py-1.5 px-2 bg-yellow-300   rounded-sm hover:bg-black hover:text-white transition-colors duration-500"
           >
-            {locale === "en" ? "Read More" : "mehr lesen"}
+            {locale === "en" ? "Read More" : "Weiter lesen"}
           </Link>
         </div>
       </div>

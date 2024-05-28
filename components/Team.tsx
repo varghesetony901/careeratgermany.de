@@ -13,7 +13,7 @@ const Team = async ({ locale }: { locale: Locale }) => {
         <h2 className="mb-4 text-3xl font-bold text-gray-900 text-center">
           {page.home.team.title}
         </h2>
-        <p className="font-light text-gray-500 lg:mb-16 sm:text-lg ">
+        <p className="font-light text-gray-500 lg:mb-16 sm:text-lg text-justify">
           {page.home.team.description}
         </p>
       </div>

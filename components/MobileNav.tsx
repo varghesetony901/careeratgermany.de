@@ -17,8 +17,8 @@ const MobileNav = ({ locale }: { locale: Locale }) => {
     { name: "gallery", link: `/${locale}/gallery` },
   ];
   const MenuItemsDe = [
-    { name: "Heim", link: `/${locale}` },
-    { name: "Dienste", link: `/${locale}/services` },
+    { name: "Startseite", link: `/${locale}` },
+    { name: "Dienstleistungen", link: `/${locale}/services` },
     { name: "Blog", link: `/${locale}/blogs` },
     { name: "Kontakt", link: `/${locale}/contact` },
     { name: "Galerie", link: `/${locale}/gallery` },

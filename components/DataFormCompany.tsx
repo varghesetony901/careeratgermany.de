@@ -83,7 +83,7 @@ const DataFormCompany = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? "Company Name" : "Firmenname"}
+                  {locale === "en" ? "Company Name" : "Unternehmensname"}
                     </FormLabel>
                   <FormControl>
                     <Input placeholder="Morris Planet" {...field} />
@@ -100,7 +100,7 @@ const DataFormCompany = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? " Contact Person" : " Kontaktperson"}
+                  {locale === "en" ? " Contact Person" : " Ansprechpartner"}
                    </FormLabel>
                   <FormControl>
                     <Input placeholder="John Doe" {...field} />
@@ -116,11 +116,13 @@ const DataFormCompany = () => {
               name="apprenticeships"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{locale === "en" ? "Apprenticeships" : "Lehrstellen"}</FormLabel>
+                  <FormLabel>{locale === "en" ? "Apprenticeships" : "Ausbildungsberufe"}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Nursing specialist, Hotel Management, Food Technology "
-                      {...field}
+                     placeholder= {locale === "en"
+                     ? "Nursing specialist, Hotel Management, Food Technology"
+                     : "Pflegefachmann, Hotelmanagement, Lebensmitteltechnologie"}
+                     {...field}
                     />
                   </FormControl>
                   <FormMessage />
@@ -150,12 +152,12 @@ const DataFormCompany = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                  {locale === "en" ? "Telephone with direct dialing (voluntary information)" : "Telefon mit Direktwahl (freiwillige Angaben)"}
+                  {locale === "en" ? "Telephone with direct dialing (voluntary information)" : "Telefon mit Durchwahl (freiwillige Angabe)"}
                     
                   </FormLabel>
                   <FormControl>
                   <Input
-                      placeholder={locale === "en" ? "contact number here" : "Kontaktnummer hier"}
+                      placeholder={locale === "en" ? "contact number here" : "Kontakt Nummer hier"}
                       {...field}
                       type="number"
                     />
@@ -202,7 +204,7 @@ const DataFormCompany = () => {
               name="notes"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{locale === "en" ? "Notes" : "Notizen"}</FormLabel>
+                  <FormLabel>{locale === "en" ? "Notes" : "Hinweise"}</FormLabel>
                   <FormControl>
                   <Input
                       placeholder= {locale === "en" ? "What do you want to tell us in advance?" : "Was möchten Sie uns im Voraus mitteilen?"}
@@ -222,14 +224,14 @@ const DataFormCompany = () => {
               className="underline cursor-pointer text-blue-800 hover:text-blue-600"
             >
                
-              {locale === "en" ? "C @ G Recruiting is committed to protecting and respecting your  privacy. We will contact you, store and use your data only for the purpose of this request. If you agree, agree!" : "C@G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden uns mit Ihnen in Verbindung setzen, Ihre Daten nur zum Zweck dieser Anfrage speichern und verwenden. Wenn Sie einverstanden sind, stimmen Sie zu!"}
+              {locale === "en" ? "C @ G Recruiting is committed to protecting and respecting your  privacy. We will contact you, store and use your data only for the purpose of this request. If you agree, agree!" : "C@G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden Sie kontaktieren, Ihre Daten speichern und verwenden nur für den Zweck dieser Anfrage. Wenn Sie einverstanden sind, stimmen Sie zu!"}
               
             </Link>
             <div className="flex items-center gap-4">
               <Checkbox onCheckedChange={() => setIsChecked(!isChecked)} />
 
               <p>
-              {locale === "en" ? "I agree to be contacted by C@G Recruiting" : "Ich bin damit einverstanden, von C@G Recruiting kontaktiert zu werden"}
+              {locale === "en" ? "I agree to be contacted by C@G Recruiting" : "Ich stimme zu, von C@G Recruiting kontaktiert zu werden"}
                 
                 <span className="text-red-500"> *</span>
               </p>
@@ -244,12 +246,12 @@ const DataFormCompany = () => {
             </Link>
 
             <Button type="submit" disabled={!isChecked || isUploading}>
-            {locale === "en" ? "Submit" : "Senden"}
+            {locale === "en" ? "Submit" : "Absenden"}
               
             </Button>
 
             <p>
-            {locale === "en" ? "Best regards, C@G Recruiting team" : "Mit freundlichen Grüßen, C@G Recruiting Team"}
+            {locale === "en" ? "Best regards, C@G Recruiting team" : "Mit freundlichen Grüßen, Ihr C@G Recruiting Team"}
               </p>
 
             <FormSuccess message={success} />

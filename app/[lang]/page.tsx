@@ -12,20 +12,20 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 const perks = [
   {
     nameEn: "Potential Trainee",
-    nameDe: "Potenzieller Trainee",
+    nameDe: "Potenzielle Auszubildende",
     Icon: GrUserWorker,
     descriptionEn:
       "CareerAtGermany Provides Visa porcessing support for the successfull applicant.",
     descriptionDe:
-      "CareerAtGermany unterstützt den erfolgreichen Bewerber bei der Visa-Beantragung.",
+      "C@G UG bietet Unterstützung bei der Visumsbearbeitung für erfolgreiche Bewerber.",
   },
   {
     nameEn: "Faster Processing",
-    nameDe: "Schnellere Verarbeitung",
+    nameDe: "Schnellere Bearbeitung",
     Icon: GiProcessor,
     descriptionEn: "Get your application processed faster through our portal.",
     descriptionDe:
-      "Beschleunigen Sie die Bearbeitung Ihrer Bewerbung über dieses Portal.",
+      "Lassen Sie Ihre Bewerbung schneller über unser Portal bearbeiten.",
   },
   {
     nameEn: "Knowledge of German",
@@ -34,32 +34,32 @@ const perks = [
     descriptionEn:
       "With the best Travel plan all our successfull applicants move to Germany quickly.",
     descriptionDe:
-      "Mit dem besten Reiseplan ziehen alle unsere erfolgreichen Bewerber schnell nach Deutschland.",
+      "Mit dem besten Reiseplan kommen alle unsere erfolgreichen Bewerber schnell nach Deutschland.",
   },
   {
     nameEn: "100% visa success rate",
-    nameDe: "100% Visum-Erfolgsquote",
+    nameDe: "100% Visumerfolgsquote",
     Icon: GiPassport,
     descriptionEn: "We have 100% visa success rate since 2017.",
-    descriptionDe: "Wir haben seit 2017 eine Erfolgsquote von 100% bei Visa",
+    descriptionDe: "Seit 2017 haben wir eine 100% Visumerfolgsquote.",
   },
   {
     nameEn: "Live status updates",
-    nameDe: "Live-Statusaktualisierungen",
+    nameDe: "Live-Status-Updates",
     Icon: TbLivePhoto,
     descriptionEn:
       "Through our live status updates a student can easily track the process.",
     descriptionDe:
-      "Durch unsere Live-Status-Updates kann ein Schüler den Prozess leicht verfolgen.",
+      "Durch unsere Live-Status-Updates können Schüler den Prozess leicht verfolgen.",
   },
   {
     nameEn: "Career Insurance",
-    nameDe: "Karriere-Versicherung",
+    nameDe: "Karriereversicherung",
     Icon: VscWorkspaceTrusted,
     descriptionEn:
       "We ensure the safety for each and every students who wish to study in Germany.",
     descriptionDe:
-      "Wir sorgen für die Sicherheit aller Studierenden, die in Deutschland studieren möchten.",
+      "Wir sorgen für die Sicherheit jedes Schülers, der in Deutschland studieren möchte.",
   },
 ];
 export default async function Home({ params }: { params: { lang: Locale } }) {
@@ -83,7 +83,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
                 alt=""
                 className="lg:mt-2 rounded-md"
               />
-              <div className="flex flex-col gap-4 text-gray-500 sm:text-lg font-light">
+              <div className="flex flex-col gap-4 text-gray-500 sm:text-lg font-light text-justify">
                 <p>{page.home.about.description1}</p>
                 <p>{page.home.about.description2}</p>
               </div>

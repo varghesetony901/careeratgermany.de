@@ -30,15 +30,6 @@ import { FormError } from "./form-error";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
-const defaultValues = {
-  studentName: "",
-  intake: "April 2025",
-  apprenticeships: "",
-  email: "",
-  notes: "",
-  telephone: "",
-};
-
 const DataFormTrainee = () => {
   const params = useParams();
   const locale = params?.lang;
@@ -90,7 +81,7 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Applicant Name"
-                      : "Name des Antragstellers"}
+                      : "Bewerbername"}
                   </FormLabel>
                   <FormControl>
                     <Input placeholder="John Doe" {...field} />
@@ -109,11 +100,13 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Apprenticeships"
-                      : "Lehrstellen"}
+                      : "Ausbildungsberufe"}
                   </FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Nursing specialist, Hotel Management, Food Technology"
+                      placeholder= {locale === "en"
+                      ? "Nursing specialist, Hotel Management, Food Technology"
+                      : "Pflegefachmann, Hotelmanagement, Lebensmitteltechnologie"}
                       {...field}
                     />
                   </FormControl>
@@ -146,14 +139,14 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Telephone with direct dialing (voluntary information)"
-                      : "Telefon mit Direktwahl (freiwillige Angaben)"}
+                      : "Telefon mit Durchwahl (freiwillige Angabe)"}
                   </FormLabel>
                   <FormControl>
                     <Input
                       placeholder={
                         locale === "en"
                           ? "contact number here"
-                          : "Kontaktnummer hier"
+                          : "Kontakt Nummer hier"
                       }
                       {...field}
                       type="number"
@@ -173,7 +166,7 @@ const DataFormTrainee = () => {
                   <FormLabel>
                     {locale === "en"
                       ? "Which intake are you looking for?"
-                      : "Welche Einnahme suchst du?"}
+                      : "Welchen Eintrittstermin suchen Sie?"}
                   </FormLabel>
                   <Select onValueChange={field.onChange}>
                     <FormControl>
@@ -183,7 +176,7 @@ const DataFormTrainee = () => {
                           placeholder={
                             locale === "en"
                               ? "Select intake here"
-                              : "Wählen Sie hier die Einnahme aus"
+                              : "Eintrittstermin hier auswählen"
                           }
                         />
                       </SelectTrigger>
@@ -212,7 +205,7 @@ const DataFormTrainee = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                    {locale === "en" ? "Notes" : "Notizen"}
+                    {locale === "en" ? "Notes" : "Hinweise"}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -238,7 +231,7 @@ const DataFormTrainee = () => {
             >
               {locale === "en"
                 ? "C @ G Recruiting is committed to protecting and respecting your  privacy. We will contact you, store and use your data only for the purpose of this request. If you agree, agree!"
-                : "C@G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden uns mit Ihnen in Verbindung setzen, Ihre Daten nur zum Zweck dieser Anfrage speichern und verwenden. Wenn Sie einverstanden sind, stimmen Sie zu!"}
+                : "C@G Recruiting verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Wir werden Sie kontaktieren, Ihre Daten speichern und verwenden nur für den Zweck dieser Anfrage. Wenn Sie einverstanden sind, stimmen Sie zu!"}
             </Link>
             <div className="flex items-center gap-4">
               <Checkbox onCheckedChange={() => setIsChecked(!isChecked)} />
@@ -246,7 +239,7 @@ const DataFormTrainee = () => {
               <p>
                 {locale === "en"
                   ? "I agree to be contacted by C@G Recruiting"
-                  : "Ich bin damit einverstanden, von C@G Recruiting kontaktiert zu werden"}
+                  : "Ich stimme zu, von C@G Recruiting kontaktiert zu werden"}
 
                 <span className="text-red-500"> *</span>
               </p>
@@ -262,13 +255,13 @@ const DataFormTrainee = () => {
             </Link>
 
             <Button type="submit" disabled={!isChecked || isUploading}>
-              {locale === "en" ? "Submit" : "Senden"}
+              {locale === "en" ? "Submit" : "Absenden"}
             </Button>
 
             <p>
               {locale === "en"
                 ? "Best regards, C@G Recruiting team"
-                : "Mit freundlichen Grüßen, C@G Recruiting-Team"}
+                : "Mit freundlichen Grüßen, Ihr C@G Recruiting Team"}
             </p>
 
             <FormSuccess message={success} />

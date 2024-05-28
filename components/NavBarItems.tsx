@@ -20,8 +20,8 @@ const NavBarItems = ({ locale }: { locale: Locale }) => {
     { name: "gallery", link: `/${locale}/gallery` },
   ];
   const MenuItemsDe = [
-    { name: "heim", link: `/${locale}` },
-    { name: "Dienste", link: `/${locale}/services` },
+    { name: "startseite", link: `/${locale}` },
+    { name: "dienstleistungen", link: `/${locale}/services` },
     { name: "Blog", link: `/${locale}/blogs` },
     { name: "Kontakt", link: `/${locale}/contact` },
     { name: "Galerie", link: `/${locale}/gallery` },

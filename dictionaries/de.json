@@ -10,43 +10,43 @@
     "home": {
       "hero" :{
         "tagLine1" : "Jenseits der Einstellung, Aufbau von Teams",
-        "tagLine2" : "Talente mit Chancen verbinden :",
-        "tagLine3" : "Ihr Erfolg, unser Know-how!",
-        "tagLine4" : "Ihr zuverlässiger Partner im Recruiting.",
+        "tagLine2" : "Verbinden von Talenten mit Chancen :",
+        "tagLine3" : "Ihr Erfolg, Unsere Expertise!",
+        "tagLine4" : "Ihr vertrauenswürdiger Partner in der Personalvermittlung.",
         "button1" : "Loslegen",
-        "button2" : "Kontaktiere uns"
+        "button2" : "Kontaktieren Sie uns"
       },
       "about": {
-        "title": "Über",
-        "description1": "Jedes Jahr bleiben in Deutschland tausende Stellen unbesetzt, andernorts herrscht hohe Arbeitslosigkeit und junge Menschen haben keine klaren beruflichen Perspektiven. Das ist eine der größten Herausforderungen für unsere Wirtschaft. Unsere Mission ist es, eine Plattform zu schaffen, die beide Seiten zusammenbringt. In Kooperation mit deutschen Sprachschulen in Indien vermitteln wir den Schülern nicht nur die deutsche Sprache, sondern bereiten sie auch gezielt auf das Leben und Arbeiten in Deutschland vor.",
-        "description2": "Wir stellen den Schülerinnen und Schülern die verschiedenen Ausbildungsberufe vor und unterstützen sie bei der Berufswahl. Sobald die Entscheidung gefallen ist, begleiten wir die Studierenden während des gesamten Rekrutierungsprozesses bis hin zu ihrem ersten Arbeitstag in Deutschland. Darüber hinaus können deutsche Unternehmen ihre offenen Ausbildungsplätze besetzen und eine langfristige Personalstrategie aufbauen."
+        "title": "Über uns",
+        "description1": "Jedes Jahr bleiben in Deutschland tausende Ausbildungsplätze unbesetzt, während anderswo hohe Arbeitslosenquoten herrschen und junge Menschen keine klaren Berufsaussichten haben. Dies ist eine der größten Herausforderungen für unsere Wirtschaft. Unsere Mission ist es, eine Plattform zu schaffen, die beide Seiten zusammenbringt. In Zusammenarbeit mit deutschen Sprachschulen in Indien lehren wir den Schülern nicht nur die deutsche Sprache, sondern bereiten sie auch gezielt auf das Leben und Arbeiten in Deutschland vor.",
+        "description2": "Wir stellen den Schülern die verschiedenen Ausbildungsberufe vor und helfen ihnen bei der Wahl ihres zukünftigen Karrierewegs. Sobald die Entscheidung getroffen ist, unterstützen wir die Schüler während des gesamten Rekrutierungsprozesses bis zu ihrem ersten Arbeitstag in Deutschland. Mit unseren Dienstleistungen können deutsche Unternehmen ihre Ausbildungsstellen besetzen und eine langfristige Personalstrategie aufbauen."
       },
       "services" : {
-        "title" : "Dienste",
-        "tagLine1": "Sie sind auf der Suche nach Auszubildenden oder auf der Suche nach einem Ausbildungsplatz? Dann sind Sie hier genau richtig!",
-        "description1" : "Durch unser Netzwerk und unsere Verbindungen zu u.a. kleinen, mittleren und großen Unternehmen sowie Schulen, Vereinen und anderen Kanälen in verschiedenen Regionen und bereits 16 Ländern weltweit bringen wir Auszubildende direkt mit Ausbildungsbetrieben zusammen.",
-        "description2" : "Unser Personalberatungsmanagement für Auszubildende umfasst unter anderem eine sorgfältige Auswahl von Auszubildenden und Ausbildern.",
+        "title" : "Dienstleistungen",
+        "tagLine1": "Suchen Sie Auszubildende oder eine Ausbildungsstelle? Dann sind Sie hier genau richtig!",
+        "description1" : "Durch unser Netzwerk und unsere Verbindungen zu unter anderem kleinen, mittelständischen und großen Unternehmen sowie Schulen, Vereinen und anderen Kanälen in verschiedenen Regionen und bereits 16 Ländern weltweit, bringen wir Auszubildende direkt mit Ausbildungsbetrieben zusammen.",
+        "description2" : "Unser Personalberatungsmanagement für Auszubildende umfasst unter anderem eine sorgfältige Auswahl der Auszubildenden und Ausbilder.",
         "tagLine2" : "Vorteile unserer Dienstleistungen",
         "card1" : {
           "title": "Für Auszubildende",
-          "point1": "Unterstützung von Anwendungsmaßnahmen",
+          "point1": "Unterstützung bei Bewerbungsmaßnahmen",
           "point2": "Unterstützung bei der Berufswahl",
           "point3": "Suche nach geeigneten Unternehmen",
-          "point4": "Wir vereinbaren das Vorstellungsgespräch und begleiten Sie [falls gewünscht]",
-          "point5": "Unterstützung in der Anfangszeit"
+          "point4": "Wir arrangieren das Vorstellungsgespräch und begleiten Sie (falls gewünscht)",
+          "point5": "Unterstützung in den ersten Tagen"
         },
         "card2" : {
           "title": "Für Unternehmen",
           "point1": "Übernahme der komplexen Suche nach Auszubildenden",
-          "point2": "Wegfall von Kosten u.a. für Werbung und enorme Zeitersparnis",
-          "point3": "Optimierter Vorauswahl-/Auswahlprozess",
-          "point4": "Begleitung der Auszubildenden in der Anfangszeit"
+          "point2": "Einsparung von Kosten für unter anderem Werbung und enorme Zeitersparnis",
+          "point3": "Optimierter Vor-/Auswahlprozess",
+          "point4": "Begleitung der Auszubildenden in den ersten Tagen"
         },
         "applyButton" : "Jetzt bewerben"
       },
       "team" : {
         "title" : "Unser Team",
-        "description" : "Das Herzstück unseres Unternehmens ist ein engagiertes Kernteam, das sich aus Personen zusammensetzt, die mit ihrer Expertise und ihrem Engagement unsere Mission vorantreiben. Von visionären Führungskräften, die die strategische Ausrichtung gestalten, bis hin zu gewissenhaften Administratoren, die die betriebliche Effizienz sicherstellen, bringt jedes Mitglied einzigartige Stärken und Perspektiven mit. Gemeinsam arbeiten wir nahtlos zusammen und nutzen unsere kollektiven Fähigkeiten, um Herausforderungen zu meistern, Chancen zu ergreifen und wirkungsvolle Ergebnisse zu erzielen. Verankert in der gemeinsamen Leidenschaft für die Ziele unseres Unternehmens, dient unser Kernteam als treibende Kraft hinter unserem Erfolg, inspiriert andere und fördert bei jedem Schritt eine Kultur der Exzellenz."
+        "description" : "Im Herzen unseres Unternehmens steht ein engagiertes Kernteam, das aus Personen besteht, deren Fachwissen und Engagement unsere Mission vorantreiben. Von visionären Führungskräften, die die strategische Richtung vorgeben, bis hin zu fleißigen Administratoren, die die operative Effizienz gewährleisten, bringt jedes Mitglied einzigartige Stärken und Perspektiven ein. Gemeinsam arbeiten wir nahtlos zusammen, nutzen unsere kollektiven Fähigkeiten, um Herausforderungen zu meistern, Chancen zu nutzen und wirkungsvolle Ergebnisse zu erzielen. Verankert durch eine gemeinsame Leidenschaft für die Ziele unseres Unternehmens, dient unser Kernteam als treibende Kraft hinter unserem Erfolg, inspiriert andere und fördert eine Kultur der Exzellenz auf Schritt und Tritt."
       }
     },
 

@@ -37,7 +37,7 @@ const Hero = async ({ locale }: { locale: Locale }) => {
               </Button>
             </Link>
             <Link href={`${locale}/contact`}>
-              <Button className="bg-white text-black w-36 hover:bg-yellow-300 shadow-xl">
+              <Button className="bg-white text-black hover:bg-yellow-300 shadow-xl">
                 {page.home.hero.button2}
               </Button>
             </Link>

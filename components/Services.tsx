@@ -17,11 +17,11 @@ const Services = async ({ locale }: { locale: Locale }) => {
           <p className="sm:text-xl font-semibold">
             {page.home.services.tagLine1}
           </p>
-          <p className="text-gray-700 font-light sm:text-lg">
+          <p className="text-gray-700 font-light sm:text-lg text-justify">
             {page.home.services.description1}
           </p>
 
-          <p className="text-gray-700 sm:text-lg font-light">
+          <p className="text-gray-700 sm:text-lg font-light text-justify">
             {page.home.services.description2}
           </p>
         </div>
