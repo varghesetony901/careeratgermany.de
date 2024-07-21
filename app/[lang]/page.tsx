@@ -15,9 +15,9 @@ const perks = [
     nameDe: "Potenzielle Auszubildende",
     Icon: GrUserWorker,
     descriptionEn:
-      "CareerAtGermany Provides Visa porcessing support for the successfull applicant.",
+      "C@G Recruiting UG Provides Visa porcessing support for the successfull applicant.",
     descriptionDe:
-      "C@G UG bietet Unterstützung bei der Visumsbearbeitung für erfolgreiche Bewerber.",
+      "C@G Recruiting UG bietet Unterstützung bei der Visumsbearbeitung für erfolgreiche Bewerber.",
   },
   {
     nameEn: "Faster Processing",

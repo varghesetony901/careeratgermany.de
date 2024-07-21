@@ -35,7 +35,7 @@ const page = async ({ params }: { params: { lang: Locale } }) => {
                 <div className=" flex gap-2 items-center">
                   <FaFileDownload size={20} />
                   <a
-                    href="https://tony-next-ecommerce.s3.ap-south-1.amazonaws.com/C%40G+Recruiting+UG+Brochure.pdf"
+                    href="https://career-at-germany-de.s3.ap-south-1.amazonaws.com/brochure/Brochure+CAG+UG.pdf"
                     target="_blank"
                     download
                     className="mx-2 inline-block hover:underline md:text-lg text-blue-800"
@@ -71,11 +71,11 @@ const page = async ({ params }: { params: { lang: Locale } }) => {
                 <div className="flex items-center gap-2">
                   <IoMdMail size={22} />
                   <Link
-                    href={"mailto:careeratgermanyrecruiting@gmail.com"}
+                    href={"mailto:info@careeratgermany.de"}
                     className="inline-block gap-2  items-center hover:text-red-700 transition-colors duration-300"
                   >
                     <span className="mx-2  truncate   dark:text-gray-400">
-                      careeratgermanyrecruiting@gmail.com
+                      info@careeratgermany.de
                     </span>
                   </Link>
                 </div>
